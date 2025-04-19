@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CGPA to Percentage Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> CgpaConverter</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="converter-card">
+                    <div class="card-header">
+                        <h1><i class="fas fa-calculator"></i> CGPA to Percentage Calculator</h1>
+                        <p class="subtitle">Quick and accurate conversion for Indian universities</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="institution">Select Your Institution</label>                            <select class="form-control custom-select" id="institution">
+                                <option value="private">Private Engineering Colleges</option>
+                                <option value="mumbai">Mumbai University</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cgpa">Enter Your CGPA</label>
+                            <input type="number" class="form-control" id="cgpa" placeholder="Enter your CGPA (0-10)" step="0.01" min="0" max="10"/>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-lg btn-block convert-btn" onclick="convert()">
+                            <i class="fas fa-sync-alt"></i> Convert
+                        </button>
+                        
+                        <div class="result-section">
+                            <p id="result" class="mt-4"></p>
+                            <p id="note" class="note"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card mt-4">                    <h3><i class="fas fa-info-circle"></i> How it works?</h3>
+                    <p>This converter uses standard formulas accepted by Indian universities to convert your CGPA to percentage:</p>
+                    <ul>
+                        <li>Private Engineering Colleges:
+                            <ul>
+                                <li>For CGPA ≥ 7: Percentage = (CGPA × 7.4) + 12</li>
+                                <li>For CGPA < 7: Percentage = (CGPA × 7.1) + 12</li>
+                            </ul>
+                        </li>
+                        <li>Mumbai University: Percentage = (CGPA × 7.1) + 11</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CgpaConverter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
