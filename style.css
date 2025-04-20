@@ -127,8 +127,9 @@ body {
 .info-card {
     background: white;
     border-radius: var(--border-radius);
-    padding: 1.5rem;
+    padding: 2.5rem;
     box-shadow: var(--box-shadow);
+    margin: 2rem 0 3rem 0;
 }
 
 .info-card h3 {
