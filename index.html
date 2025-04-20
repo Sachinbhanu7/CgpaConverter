@@ -102,12 +102,205 @@
         </div>
     </div>
 
+    <section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title text-center">Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">&#9654;</span>
+          How do I convert my CGPA to percentage for Mumbai University?
+        </div>
+        <div class="faq-answer">
+          Use the formula: <span class="highlight-formula">Percentage = (CGPA × 7.1) + 11</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">&#9654;</span>
+          What is the formula for converting CGPA to percentage for private engineering colleges?
+        </div>
+        <div class="faq-answer">
+          <div>If CGPA ≥ 7: <span class="highlight-formula">Percentage = (CGPA × 7.4) + 12</span></div>
+          <div>If CGPA &lt; 7: <span class="highlight-formula">Percentage = (CGPA × 7.1) + 12</span></div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">&#9654;</span>
+          Why do CGPA conversion formulas vary between colleges?
+        </div>
+        <div class="faq-answer">
+          Different universities use different grading systems and formulas based on academic guidelines.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">&#9654;</span>
+          What is the highest CGPA I can input into the converter?
+        </div>
+        <div class="faq-answer">
+          You can input values from 0 to 10, which is the standard scale in Indian universities.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">&#9654;</span>
+          Can this calculator be used for other universities?
+        </div>
+        <div class="faq-answer">
+          Currently, it supports Mumbai University and private engineering colleges. For others, refer to official formulas.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ STYLES -->
+<style>
+  .faq-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #eee;
+  }
+
+  .faq-question {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+    transition: background 0.2s;
+  }
+
+  .faq-question:hover {
+    background-color: #f1f1f1;
+  }
+
+  .faq-icon {
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+    color: #007bff;
+    font-size: 1.1rem;
+  }
+
+  .faq-item.open .faq-icon {
+    transform: rotate(90deg);
+  }
+
+  .faq-answer {
+    padding: 0 20px 15px;
+    display: none;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+
+  .highlight-formula {
+    display: inline-block;
+    background-color: #eef6ff;
+    padding: 4px 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004080;
+  }
+</style>
+
+<!-- FAQ SCRIPT -->
+<script>
+  function toggleFAQ(element) {
+    const item = element.parentElement;
+    item.classList.toggle("open");
+  }
+</script>
+
     <footer class="footer">
         <div class="container text-center">
             <p>&copy; 2025 CgpaConverter. All rights reserved.</p>
         </div>
     </footer>
 
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert my CGPA to percentage for Mumbai University?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the formula: Percentage = (CGPA × 7.1) + 11."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the formula for converting CGPA to percentage for private engineering colleges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If CGPA ≥ 7: Percentage = (CGPA × 7.4) + 12; If CGPA < 7: Percentage = (CGPA × 7.1) + 12."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do CGPA conversion formulas vary between colleges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Different universities and colleges follow different grading systems and scale their CGPA‑to‑percentage conversions differently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the highest CGPA I can input into the converter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The CGPA input range is from 0 to 10, which is the standard scale used by most Indian universities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can this calculator be used for other universities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Currently, this tool is designed for Mumbai University and private engineering colleges. For other universities, please check their specific conversion formulas."
+      }
+    }
+  ]
+}
+</script>
+ 
     <!-- ✅ JSON-LD Structured Data for Google -->
     <script type="application/ld+json">
     {
