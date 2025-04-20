@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sachinbhanu7.github.io/CgpaConverter/sitemap.xml
