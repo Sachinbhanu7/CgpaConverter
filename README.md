@@ -1,7 +1,7 @@
 # CGPAConverter – SaaS Web Tool  
 🔗 [Live Demo](https://sachinbhanu7.github.io/CgpaConverter/) | 📁 [GitHub Repository](https://github.com/sachinbhanu7/CgpaConverter)
 
-![Preview](preview.png)
+![Preview](Preview.png)
 
 A simple and responsive SaaS-style web tool that converts CGPA to percentage based on Mumbai University and private university formulas.
 
