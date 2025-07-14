@@ -3,28 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CGPA to Percentage Converter | Mumbai University & Private Engineering Colleges</title>
+    <title>CGPA to Percentage Converter</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SH26G5T4K5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SH26G5T4K5');
-</script>
-
-
-    <!-- ✅ SEO Meta Tags -->
-    
-    <meta name="description"
-      content="Free CGPA to Percentage Converter for Mumbai University & Private Engineering Colleges. Instantly convert your CGPA to % with our accurate online calculator!" />
+    <meta name="description" content="Convert your CGPA to percentage easily using this free online calculator. Works for Mumbai University and private engineering colleges in India." />
     <meta name="keywords" content="cgpa to percentage, mumbai university cgpa conversion, private engineering college cgpa, cgpa calculator india, cgpa percentage converter" />
     <meta name="author" content="CgpaConverter Team" />
     <meta name="robots" content="index, follow" />
 
-    <!-- ✅ Open Graph Meta Tags -->
     <meta property="og:title" content="CGPA to Percentage Converter – Mumbai University & Private Colleges" />
     <meta property="og:description" content="Free tool to convert CGPA to percentage for Mumbai University and private engineering students. Accurate, fast, and easy!" />
     <meta property="og:type" content="website" />
@@ -32,19 +17,19 @@
     <meta property="og:image" content="https://yourusername.github.io/your-repo-name/preview.png" />
     <meta property="og:image:alt" content="CGPA to Percentage Converter UI Screenshot" />
 
-    <!-- ✅ Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CGPA to Percentage Converter – Indian Engineering Colleges" />
     <meta name="twitter:description" content="Quickly convert CGPA to percentage for Mumbai University and private engineering colleges." />
     <meta name="twitter:image" content="https://yourusername.github.io/your-repo-name/preview.png" />
 
-    <!-- Original Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <canvas id="bg-animated"></canvas>
+    
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> CgpaConverter</a>
@@ -103,7 +88,6 @@
     </div>
 
     <section class="faq-section">
-  <div class="container">
     <h2 class="faq-title text-center">Frequently Asked Questions</h2>
     <div class="faq-list">
 
@@ -159,86 +143,10 @@
       </div>
 
     </div>
-  </div>
 </section>
 
-<!-- FAQ STYLES -->
-<style>
-  .faq-section {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-    font-family: 'Poppins', sans-serif;
-  }
 
-  .faq-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #007bff;
-    margin-bottom: 30px;
-  }
 
-  .faq-list {
-    max-width: 800px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-
-  .faq-item {
-    border-bottom: 1px solid #eee;
-  }
-
-  .faq-question {
-    padding: 15px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    color: #333;
-    transition: background 0.2s;
-  }
-
-  .faq-question:hover {
-    background-color: #f1f1f1;
-  }
-
-  .faq-icon {
-    margin-right: 12px;
-    transition: transform 0.3s ease;
-    color: #007bff;
-    font-size: 1.1rem;
-  }
-
-  .faq-item.open .faq-icon {
-    transform: rotate(90deg);
-  }
-
-  .faq-answer {
-    padding: 0 20px 15px;
-    display: none;
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .faq-item.open .faq-answer {
-    display: block;
-  }
-
-  .highlight-formula {
-    display: inline-block;
-    background-color: #eef6ff;
-    padding: 4px 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #004080;
-  }
-</style>
-
-<!-- FAQ SCRIPT -->
 <script>
   function toggleFAQ(element) {
     const item = element.parentElement;
@@ -246,11 +154,32 @@
   }
 </script>
 
+
     <footer class="footer">
         <div class="container text-center">
             <p>&copy; 2025 CgpaConverter. All rights reserved.</p>
         </div>
     </footer>
+
+    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CGPA to Percentage Converter",
+      "url": "https://yourusername.github.io/your-repo-name/",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "All",
+      "description": "Convert CGPA to percentage instantly for Mumbai University and private engineering colleges in India.",
+      "creator": {
+        "@type": "Organization",
+        "name": "CgpaConverter Team"
+      }
+    }
+    </script>
+
+    <script src="script.js"></script>
 
     <script type="application/ld+json">
 {
@@ -300,24 +229,6 @@
   ]
 }
 </script>
- 
-    <!-- ✅ JSON-LD Structured Data for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "CGPA to Percentage Converter",
-      "url": "https://yourusername.github.io/your-repo-name/",
-      "applicationCategory": "EducationApplication",
-      "operatingSystem": "All",
-      "description": "Convert CGPA to percentage instantly for Mumbai University and private engineering colleges in India.",
-      "creator": {
-        "@type": "Organization",
-        "name": "CgpaConverter Team"
-      }
-    }
-    </script>
 
-    <script src="script.js"></script>
 </body>
 </html>
